@@ -37,14 +37,14 @@ h1 > span{
 .beauty{
   display: inline-block;
   height: 300px;
-  width: 900px;
+  width: 800px;
   margin-right: 100px;
 }
 
 .construction{
   display: inline-block;
   height: 300px;
-  width: 900px;
+  width: 800px;
 }
 
 .beauty > h4 {
@@ -71,7 +71,7 @@ footer{
   position: relative;
   font-size: 14pt;
   top: 350px;
-  left: 92%;
+  left: 80%;
 }
 
 p{
@@ -124,48 +124,83 @@ h4{
   }
 
   @media (min-width:481px) and (max-width: 1200px){
-  body{
-    padding: 60px;
-    margin: 0;
-  }
+    body{
+      padding: 60px;
+      margin: 0;
+    }
 
-  div > h1{
-    font-size: 40pt;
-    margin: 0 0 20pt 0;
-  }
-      
-  .beauty > img{
-    width: 100%;
-    margin: 0;
-  }
+    div > h1{
+      font-size: 40pt;
+      margin: 0 0 20pt 0;
+    }
+        
+    .beauty > img{
+      width: 100%;
+      margin: 0;
+    }
 
-  .construction > img{
-    width: 100%;
-    margin: 0;
-  }
-      
-  .beauty{
-    display: inline-block;
-    height: 600px;
-    width: 600px;
-    margin: 0;
-  }
+    .construction > img{
+      width: 100%;
+      margin: 0;
+    }
+        
+    .beauty{
+      display: inline-block;
+      height: 600px;
+      width: 600px;
+      margin: 0;
+    }
 
-  .construction{
-    display: inline-block;
-    height: 600px;
-    width: 600px;
-    margin: 0;
-  }
+    .construction{
+      display: inline-block;
+      height: 600px;
+      width: 600px;
+      margin: 0;
+    }
 
-  footer{
-    font-size: 15pt;
-    left: 98%;
-  }
+    footer{
+      font-size: 15pt;
+      left: 98%;
+    }
   }
 
   @media (min-width:1201px) and (max-width: 1600px){
     body{
-      background-color: pink;
+      padding: 60px;
+      margin: 0;
+    }
+
+    div > h1{
+      font-size: 40pt;
+      margin: 0 0 20pt 0;
+    }
+        
+    .beauty > img{
+      width: 100%;
+      margin: 0;
+    }
+
+    .construction > img{
+      width: 100%;
+      margin: 0;
+    }
+        
+    .beauty{
+      display: inline-block;
+      height: 600px;
+      width: 600px;
+      margin: 0;
+    }
+
+    .construction{
+      display: inline-block;
+      height: 600px;
+      width: 600px;
+      margin: 0;
+    }
+
+    footer{
+      font-size: 15pt;
+      left: 80%;
     }
   }
