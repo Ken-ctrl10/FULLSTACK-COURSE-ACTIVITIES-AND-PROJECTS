@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex-Direction | Udemy</title>
+
+  <!-- 
+    to practice flex-layout: https://appbrewery.github.io/flex-layout/
+    css-tricks.com
+  -->
+
+  <style>
+    .container{
+      border: 5px solid gold;
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
+
+    .container > div{
+      color: white;
+      width: 200px;
+      padding: 10px;
+      
+      flex-basis: 100px;
+    }
+
+    .red{
+      background-color: red;
+      order: 1;
+    }
+
+    .blue{
+      background-color: blue;
+      order: 5;
+    }
+
+    .green{
+      background-color: green;
+      order: 4;
+    }
+
+    .orange{
+      background-color: orange;
+      order: 2;
+    }
+
+    .yellow{
+      background-color: yellow;
+      order: 3;
+    }
+
+    .purple{
+      background-color: purple;
+      order: 7;
+    }
+
+    .indigo{
+      background-color: indigo;
+      order: 6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="red">Red Box</div>
+    <div class="blue">Blue Box</div>
+    <div class="green">Green Box</div>
+    <div class="orange">Orange Box</div>
+    <div class="yellow">Yellow Box</div>
+    <div class="purple">Purple Box</div>
+    <div class="indigo">Indigo Box</div>
+  </div>  
+</body>
+</html>
