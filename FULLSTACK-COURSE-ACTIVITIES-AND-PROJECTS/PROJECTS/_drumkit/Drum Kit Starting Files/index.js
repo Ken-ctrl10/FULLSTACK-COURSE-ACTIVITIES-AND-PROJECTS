@@ -33,12 +33,22 @@ function playSound(key) {
   }
 }
 
+function activeAnimation(key) {
+  const button = document.querySelector(`.${key}`);
+  button.classList.add('pressed');
+  setTimeout(() => {
+    button.classList.remove('pressed');
+  }, 100);
+}
+
 document.querySelectorAll('.drum').forEach(function(button){
   button.addEventListener('click', () => {
     playSound(button.innerHTML);
+    activeAnimation(button.innerHTML);
   })
 })
 
 document.addEventListener('keydown', (event) => {
   playSound(event.key);
+  activeAnimation(event.key);
 })
