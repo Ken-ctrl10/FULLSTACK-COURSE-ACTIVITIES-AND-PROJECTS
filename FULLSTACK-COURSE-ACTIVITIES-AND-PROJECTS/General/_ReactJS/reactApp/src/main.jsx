@@ -1,4 +1,20 @@
-//Import, Export, and Modules Practice
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+import App from './components/App.jsx';
+
+import './local.css';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+
+);
+
+/* //React Props
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
@@ -10,7 +26,22 @@ root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
-);
+); */
+
+
+/* //Import, Export, and Modules Practice
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+import App from './components/App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+); */
 
 /* //React Components Practice
 import React from 'react';

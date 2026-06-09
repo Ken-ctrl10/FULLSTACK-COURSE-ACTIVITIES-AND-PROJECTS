@@ -1,5 +1,10 @@
 
+// Contact HEading Component
+function Heading(){
+  return <h1 className="heading">My Contacts:</h1>
+}
 
+export default Heading;
 
 /*//Heading Component Practice
 function Heading(){

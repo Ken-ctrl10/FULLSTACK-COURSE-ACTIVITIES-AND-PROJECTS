@@ -5,7 +5,7 @@ function Footer(){
 
   return(
     <footer>
-      Created by {fullName}<br/>Copyright {currYear}
+      Created by {fullName}<br/> © Copyright {currYear}
     </footer>
   );
 }
