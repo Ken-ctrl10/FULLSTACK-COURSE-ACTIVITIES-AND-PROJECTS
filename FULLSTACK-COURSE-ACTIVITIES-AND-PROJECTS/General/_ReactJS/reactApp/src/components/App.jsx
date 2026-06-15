@@ -1,4 +1,14 @@
-//React Props Practice
+//Event Handling in React
+import Form from "./Form";
+
+
+function App(){
+  return <Form />;
+}
+
+export default App;
+
+/* //React Props Practice
 import Avatar from "./Avatar";
 import Heading from "./Heading";
 import Card from "./Card";
@@ -48,7 +58,7 @@ function App(){
         img={contact[2].img}
         phone={contact[2].phone}
         email={contact[2].email}
-      /> */}
+      /> }
 
 
       <Footer/>
@@ -57,7 +67,7 @@ function App(){
 }
 
 export default App;
-
+ */
 
 /* //React Props
 import Card from "./Card";

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'; // destructuring useState from React library
 
 import './App.css';
 

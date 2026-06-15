@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Note from "./components/Note";
 import Footer from "./components/Footer";
+import CreateArea from "./components/CreateArea";
 
 import noteEntry from "./notes.js";
 
@@ -17,12 +18,14 @@ function App() {
   return(
     <div>
       <Header />
-       
-      {noteEntry.map(noteDetails => <Note 
+
+      <CreateArea onAdd={addNote} />
+
+      {
+        noteEntry.map(noteDetails => <Note 
         key={noteDetails.key} 
         title={noteDetails.title} 
         content={noteDetails.content} />)}
-
       <Footer />
     </div>
   ); 

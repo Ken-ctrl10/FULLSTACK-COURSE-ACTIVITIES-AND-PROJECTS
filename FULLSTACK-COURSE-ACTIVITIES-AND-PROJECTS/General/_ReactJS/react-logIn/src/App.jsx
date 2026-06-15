@@ -1,4 +1,7 @@
-import Form from './components/Form';
+
+
+
+/* import Form from './components/Form';
 
 import './App.css';
 
@@ -8,7 +11,7 @@ function App(){
   return <Form isRegistered={isRegistered} />;
 }
 
-export default App;
+export default App; */
 
 /* //Basic Login Logic
 import Form from './components/Form';

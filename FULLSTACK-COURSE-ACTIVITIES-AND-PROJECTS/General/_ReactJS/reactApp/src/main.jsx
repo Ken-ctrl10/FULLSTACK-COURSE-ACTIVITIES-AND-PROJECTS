@@ -11,8 +11,61 @@ root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
-
 );
+
+
+
+/* //Simple Destructuring Practice
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+import cars from '../cars.js';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const [ honda, tesla] = cars;
+
+let { model: hondaModel, coloursByPopularity: hondaColors, speedStats: { topSpeed: hondaTopSpeed, zeroToSixty: hondaZeroToSixty } } = honda;
+let { model: teslaModel, coloursByPopularity: teslaColors, speedStats: { topSpeed: teslaTopSpeed, zeroToSixty: teslaZeroToSixty } } = tesla;
+
+root.render(
+  <React.StrictMode>
+    <table>
+      <tr>
+        <th>Brand</th>
+        <th>Top Speed</th>
+        <th>Top Colours</th>
+      </tr>
+      <tr>
+        <td>{hondaModel}</td>
+        <td>{hondaTopSpeed}</td>
+        <td>{hondaColors.join(', ')}</td>
+      </tr>
+      <tr>
+        <td>{teslaModel}</td>
+        <td>{teslaTopSpeed}</td>
+        <td>{teslaColors.join(', ')}</td>
+      </tr>
+    </table>
+  </React.StrictMode>
+); */
+
+
+/* import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+import App from './components/App.jsx';
+
+import './local.css';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+
+); */
 
 /* //React Props
 import React from 'react';
