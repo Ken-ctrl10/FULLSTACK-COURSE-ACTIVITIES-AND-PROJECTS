@@ -1,3 +1,6 @@
+import DeleteIcon from '@mui/icons-material/Delete';
+import Button from '@mui/material/Button';
+
 function Note({ title, content, onDelete, id }){
 
   function handleClick(){
@@ -8,7 +11,9 @@ function Note({ title, content, onDelete, id }){
     <div className="note">
       <h1>{title}</h1>
       <p>{content}</p>
-      <button onClick={handleClick}>Delete</button>
+      <Button onClick={ handleClick } className="delete-button">
+        <DeleteIcon />
+      </Button>
     </div>
   );
 }

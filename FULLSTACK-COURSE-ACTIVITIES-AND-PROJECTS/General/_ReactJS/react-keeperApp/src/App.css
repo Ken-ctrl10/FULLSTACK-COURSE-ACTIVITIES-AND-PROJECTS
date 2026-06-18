@@ -7,7 +7,8 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #eee;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/quilt.png");
   padding: 0 16px;
 }
 
@@ -35,6 +36,7 @@ footer {
 footer p {
   color: #ccc;
 }
+
 .note {
   background: #fff;
   border-radius: 7px;
@@ -55,7 +57,7 @@ footer p {
   word-wrap: break-word;
 }
 
-.note button {
+.note .delete-button {
   position: relative;
   float: right;
   margin-right: 10px;
@@ -86,7 +88,8 @@ form textarea {
   font-family: inherit;
   resize: none;
 }
-form button {
+
+form .add-button{
   position: absolute;
   right: 18px;
   bottom: -18px;
