@@ -82,6 +82,23 @@
   line-height: 1.4;
 }
 
+.home-intro .typing-effect {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.4em;
+}
+
+.home-intro .typing-cursor {
+  margin-left: 2px;
+  animation: typing-cursor-blink 0.8s steps(1, end) infinite;
+}
+
+@keyframes typing-cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 .home-actions {
   margin-top: 1.4rem;
   display: flex;

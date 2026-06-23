@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Button from "@mui/material/Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -9,6 +10,30 @@ import resumeFile from "../assets/Castillo_RESUME.pdf";
 import "../assets/css/main-page.css";
 
 function MainPage() {
+  const roleText = "Programmer Analyst Trainee";
+  const [typedRole, setTypedRole] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const typingSpeed = isDeleting ? 55 : 95;
+    const pauseAtEnd = 1100;
+    const pauseAtStart = 350;
+    let timeoutId;
+
+    if (!isDeleting && typedRole === roleText) {
+      timeoutId = setTimeout(() => setIsDeleting(true), pauseAtEnd);
+    } else if (isDeleting && typedRole === "") {
+      timeoutId = setTimeout(() => setIsDeleting(false), pauseAtStart);
+    } else {
+      timeoutId = setTimeout(() => {
+        const nextLength = isDeleting ? typedRole.length - 1 : typedRole.length + 1;
+        setTypedRole(roleText.slice(0, nextLength));
+      }, typingSpeed);
+    }
+
+    return () => clearTimeout(timeoutId);
+  }, [typedRole, isDeleting, roleText]);
+
   return (
     <section className="home home-section" id="home">
       <div className="image-card">
@@ -29,7 +54,10 @@ function MainPage() {
           <p className="hello">Hello, I'm</p>
           <h2>Ken Castillo</h2>
           <p className="p-details">Computer Science Graduate</p>
-          <p className="p-details" id="typing-effect">Programmer Analyst Trainee</p>
+          <p className="p-details typing-effect" id="typing-effect" aria-label={roleText}>
+            <span>{typedRole}</span>
+            <span className="typing-cursor" aria-hidden="true">|</span>
+          </p>
         </div>
 
         <div className="home-actions">
