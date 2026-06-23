@@ -14,10 +14,12 @@ function MainPage() {
       <div className="image-card">
         <div className="image-card-inner">
           <div className="image-front">
-            <img src={frontImg} alt="Ken Portrait Image" />
+            <img src={frontImg} 
+              alt="Ken Portrait Image" />
           </div>
           <div className="image-back">
-            <img src={backImg} alt="Ken Animated Portrait Image" />
+            <img src={backImg} 
+              alt="Ken Animated Portrait Image" />
           </div>
         </div>
       </div>

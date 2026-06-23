@@ -8,15 +8,16 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: clamp(1rem, 1.8vw, 1.8rem);
+  gap: clamp(0.8rem, 1.5vw, 1.5rem);
   padding: clamp(34px, 4.5vw, 60px) clamp(6%, 12vw, 18%);
+  min-height: calc(100vh - var(--header-offset));
 }
 
 .image-card {
   order: 2;
   perspective: 1000px;
   flex: 0 1 auto;
-  width: min(340px, 30vw);
+  width: min(380px, 35vw);
   max-width: 100%;
   min-width: 210px;
 }

@@ -122,6 +122,7 @@
   border-radius: 18px;
   padding: 1.2rem 1.2rem 1.3rem;
   box-shadow: 0 8px 22px rgba(24, 28, 20, 0.06);
+  cursor: default;
 }
 
 .about-snapshot h3,
@@ -271,7 +272,7 @@
 }
 
 .certificate-scroller img {
-  height: 118px;
+  height: 150px;
   width: auto;
   border-radius: 8px;
   border: 1px solid rgba(24, 28, 20, 0.15);
@@ -352,7 +353,7 @@
   }
 
   .certificate-scroller img {
-    height: 104px;
+    height: 130px;
   }
 }
 
@@ -438,7 +439,7 @@
   }
 
   .certificate-scroller img {
-    height: 92px;
+    height: 110px;
   }
 }
 
@@ -502,7 +503,7 @@
   }
 
   .certificate-scroller img {
-    height: 80px;
+    height: 95px;
     border-radius: 7px;
   }
 }
