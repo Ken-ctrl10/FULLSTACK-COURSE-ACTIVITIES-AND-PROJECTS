@@ -40,9 +40,9 @@
     "Sometimes, I like creating applications just for fun and learning, even if they don't have a real user base yet"
   ];
 
-  // Assumes your certificate images are in public/assets/certificates/cert-1.png ... cert-13.png
+  // Assumes your certificate images are in public/assets/certificates/cert-1.png ... cert-41.png
   const certificates = Array.from(
-    { length: 13 }, 
+    { length: 41 }, 
     (_, i) => `/certificates/cert-${i + 1}.png`
   );
 

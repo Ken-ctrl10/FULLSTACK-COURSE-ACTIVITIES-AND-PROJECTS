@@ -267,7 +267,7 @@
   display: flex;
   gap: 0.7rem;
   width: max-content;
-  animation: cert-scroll 42s linear infinite;
+  animation: cert-scroll 50s linear infinite;
   padding: 0.2rem 0.6rem;
 }
 
@@ -435,7 +435,7 @@
   }
 
   .certificate-scroller {
-    animation-duration: 34s;
+    animation-duration: 45s;
   }
 
   .certificate-scroller img {
@@ -499,7 +499,7 @@
   .certificate-scroller {
     gap: 0.5rem;
     padding: 0.15rem 0.4rem;
-    animation-duration: 30s;
+    animation-duration: 38s;
   }
 
   .certificate-scroller img {

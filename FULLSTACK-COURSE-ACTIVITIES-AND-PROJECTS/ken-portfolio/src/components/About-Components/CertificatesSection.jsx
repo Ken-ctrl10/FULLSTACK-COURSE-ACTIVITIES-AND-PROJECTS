@@ -6,7 +6,7 @@ function CertificatesSection() {
     <div className="about-certification">
       <div className="certificate-scroller">
         {loopingCertificates.map((src, index) => (
-          <img key={`${src}-${index}`} src={src} alt={`Certificate ${((index % 13) + 1).toString()}`} />
+          <img key={`${src}-${index}`} src={src} alt={`Certificate ${((index % 41) + 1).toString()}`} />
         ))}
       </div>
     </div>

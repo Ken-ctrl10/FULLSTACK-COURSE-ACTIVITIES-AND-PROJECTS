@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -8,7 +8,14 @@ import ProjectPage from "./components/Project-Page";
 import ContactPage from "./components/Contact-Page";
 
 function App() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme === "dark";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  }, [isDark]);
 
   const toggleTheme = () => {
     setIsDark((prev) => !prev);

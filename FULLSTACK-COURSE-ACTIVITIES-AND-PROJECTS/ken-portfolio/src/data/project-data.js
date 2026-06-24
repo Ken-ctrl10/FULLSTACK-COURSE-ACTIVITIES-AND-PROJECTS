@@ -1,3 +1,4 @@
+
 import ComingSoonImg from "../assets/images/coming-soon.jpg";
 
 const projects = [
@@ -24,7 +25,7 @@ const projects = [
       featured: false,
     },
         {
-      id: "next-project",
+      id: "next-project-2",
       title: "Next Project (Coming Soon)",
       summary:
         "A new full-stack project currently in progress as part of my React and Node.js upskilling journey.",
